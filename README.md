@@ -552,6 +552,12 @@ The following commands are supported by ElasticPress:
 define( 'ES_SHIELD', 'username:password' );
 ```
 
+Be certain to insert the code before the line that includes wp-settings.php, which looks like this:
+
+```php 
+ require_once ABSPATH . 'wp-settings.php';
+```
+
 ## Disable Dashboard Sync
 
 Dashboard sync can be disabled by defining the constant `EP_DASHBOARD_SYNC` as `false` in your wp-config.php file.
